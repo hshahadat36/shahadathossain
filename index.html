@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <style type="text/css">
+  html, body{
+  	height: 100%;
+  	width: 100%;
+  	font-family: 'Poppins',sans-serif;
+  	color: #222;
+  	background-color: #f8f9fa;
+  }
+  .navbar{
+  	padding: .8rem;
+  }
+.navbar-nav li{
+	padding-right:20px;
+
+}
+.nav-link{
+	font-size: 1.1em !important;
+}
+.carousel-inner img{
+	width: 100%;
+	height: 100%;
+
+}
+.carousel-caption{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.carousel-caption h1{
+	font-size: 500%;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 10px #000;
+}
+.carousel-caption h3{
+	font-size: 200%;
+	font-weight: 500;
+	text-shadow: 1px 1px 10px #000;
+}
+.btn-primary{
+	background-color: #6648b1;
+	border: 1px solid #563d7c;
+}
+.btn-primary:hover{
+	background-color: #563d7c;
+	border: 1px solid #563d7c;
+}
+.jumbotron{
+	padding: 1rem;
+	border-radius: 0;
+}
+
+.padding{
+	padding-bottom: 2rem;
+}
+.fa-code{
+	margin:12px;
+	font-size: 30px;
+	color:#1a1aa2;;
+}
+.fa-bold{
+	margin:12px;
+	font-size: 30px;
+	color: darkgreen;;
+}
+.fa-css3{
+	margin:12px;
+	font-size: 30px;
+	color:red;
+}
+.fun button{
+	width: 100%;
+}
+.fa-facebook{
+	font-size: 50px;
+	margin: 5px;
+	color:slateblue;
+}
+.fa-twitter{
+	font-size: 50px;
+	margin: 5px;
+
+}
+.fa-youtube{
+	font-size: 50px;
+	margin: 5px;
+	    color: red;
+}
+.fa-instagram{
+	    font-size: 48px;
+    margin: 5px;
+    color: liner gradient(red, blue);
+    background-color: linear gradient(red,blue );
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    /* background-size: 340%; */
+    border-radius: 0px;
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.contact-us{
+	
+	    color: white;
+    font-style: oblique;
+    font-family: initial;
+    font-size: 17px;
+}
+.hyperlink{
+	color: 
+}
+hr {
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+        border-top-color: currentcolor;
+        border-top-style: none;
+        border-top-width: 0px;
+    border-top: 1px solid rgb(168, 159, 159)}
+.dropdown{
+position: relative;
+display: inline-block;
+}
+.dropbtn{
+    background-color: #393a39;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+        width: 197%
+}
+.dropdown-content{
+	display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+      z-index:1 ;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+background-color: grey;
+}
+.dropdown:hover .dropdown-content{
+display: block;
+}
+.dropdown:hover .dropbtn{
+background-color: grey;
+}
+
+
+
+  </style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="logo.png" style="width: 50px;"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarresponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</div>
+	<div class="collapse navbar-collapse" id="navbarresponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+		</ul>
+	</div>
+</nav>
+<!-- image slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+	</ul>
+	<div class="carousel-inner ">
+		<div class="carousel-item active">
+			<img src="businessman.png">
+			<div class="carousel-caption">
+				<h3>Los angels</h3>
+				<p>Lorem ipsum dolor sit amet!</p>
+				<button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
+				<button class="btn btn-primary btn-lg">Get started</button>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="abc.jpg">
+			<div class="carousel-caption">
+				<h3>Los angels</h3>
+				<p>Lorem ipsum dolor sit amet!</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="galaxy.png">
+			<div class="carousel-caption">
+				<h3>Los angels</h3>
+				<p>Lorem ipsum dolor sit amet!</p>
+			</div>
+		</div>
+	</div>
+	<a href="#slides" class="carousel-control-prev" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	</a>
+	<a href="#slides" class="carousel-control-next" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	</a>
+</div>
+<div class="container-fluid">
+	<div class="row jumbotron" style="margin-bottom: 0rem;">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+
+		<a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">web hosting</button></a>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-3 col-md-3 col-sm-3 col-lg-2 " style="background-color: #3c3a3a;">
+	<div class="btn-group-vertical" style="width: 100%; text-align: center; max-width: 100%;">
+		<button type="button" class="btn" style="color: white; background-color:#3c3a3a;">HOME</button>
+	<div class="dropdown">
+		<button class="dropbtn">Products</button>
+		<div class="dropdown-content">
+			<a href="#">Desktop</a>
+			<a href="#">Laptop</a>
+			<a href="#">RAM</a>
+			<a href="#">ROM</a>
+		</div>
+	</div>
+	
+		<button type="button" class="btn" style="color: white; background-color:#3c3a3a;">Contact us</button>
+		<button type="button" class="btn" style="color: white; background-color:#3c3a3a;">Our team</button>
+		
+	</div>
+</div>
+<div class="col-xs-9 col-md-9 col-sm-9 col-lg-7">
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">build with ease</h1>
+			<hr width="50%;">
+			<div class="col-12">
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12  col-sm-6 col-md-4">
+			<i class="fas fa-code"></i>
+			<h3>HTML</h3>
+			<p>Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="col-xs-12  col-sm-6 col-md-4">
+			<i class="fas fa-bold"></i>
+			<h3>Bootstrap</h3>
+			<p>Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="col-xs-12 col-md-4">
+			<i class="fab fa-css3"></i>
+			<h3>CSS3</h3>
+			<p>Lorem ipsum dolor sit amet</p>
+		</div>
+	</div>
+</div>
+<hr>
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-9">
+			<h2>I buiuld it!</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+			<br>
+			<a href="#" class="btn btn-primary">Learn MORE</a>
+		</div>
+		<div class="col-md-12 col-lg-3">
+			<img src="logo.jpg" class="img-fluid" style="margin-top:8px;border: 1px solid black;
+    border-radius: 11px;">
+		</div>
+	</div>
+</div>
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed"></div>
+	</div>
+</figure>
+<button class="fun" data-toggle="collapse" data-target="#emoji" style="width: 100%; background-color: darkgrey;">click for fun</button>
+<div id="emoji" class="collapse">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-sm-6 col-md-3">
+				<img src="panda.gif" style="max-width: 100%; min-height: 210px; margin: 10px;">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="skeleton.gif" style="max-width: 100%; min-height: 210px; margin: 10px;">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="rabbit.gif" style="max-width: 100%; min-height: 210px; margin: 10px;">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="hagu.gif" style="max-width: 100%; min-height: 210px; margin: 10px;">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">MEET THE TEAM</h1>
+			<hr style="width: 50%;">
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-4">
+			<div class="card">
+				<img src="team1.jpg" class="card-img-top">
+				<div class="card-body">
+					<h4 class="card-title">john doe</h4>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqgretyua.
+					</p>
+					<a href="#" class="btn btn-outline-secondary">click here</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 col-lg-4">
+			<div class="card">
+				<img src="team2.jpg" class="card-img-top">
+				<div class="card-body">
+					<h4 class="card-title">shahadat hossain</h4>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+					tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+					<a href="#" class="btn btn-outline-secondary">click here</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 col-lg-4">
+			<div class="card">
+				<img src="team3.jpg" class="card-img-top">
+				<div class="card-body">
+					<h4 class="card-title">Bong chong</h4>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a href="#" class="btn btn-outline-secondary">click here</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><hr>
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-sm-12 col-md-9">
+			<h3>OUR PHILOSPHY</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris </p>
+			<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+		</div>
+		<div class="col-sm-12 col-md-3">
+			<img src="bootstrap.png" class="img-fluid">
+		</div>
+	</div>
+</div>
+<hr>
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+		<div class="col-12">
+			<h1>CONNECT WITH US</h1></div>
+			<div class="col-12 social-padding">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-youtube"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+		</div>
+</div>
+</div>
+<hr>
+<div class="container-fluid">
+	<div class="row text-center">
+		<div class="col-12">
+			<img src="logo.png">
+		</div>
+	</div>
+</div>
+</div>
+<div class="col-lg-3" style="width: 100%;" >
+	<div class="media border p-3">
+  <img src="shahadat.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+  <div class="media-body">
+    <h4>Shahadat Hossain <small><i>Posted on February 19, 2016</i></small></h4>
+    <p>Lorem ipsum...</p>
+    <div class="media p-3">
+      <img src="afrin.jpg" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+      <div class="media-body">
+        <h4>Afrin <small><i>Posted on February 20 2016</i></small></h4>
+        <p>Lorem ipsum...</p>
+      </div>
+    </div> 
+  </div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center" style="background-color:#4a4949;">
+			<div class="col-md-4">
+			<div class="contact-us">
+				<hr class="hyperlink">
+				<h5>5684684664</h5>
+				<hr class="hyperlink">
+				<p>dfaffhf@ffg.com</p>
+				<p>100,dgdu,fweiwei</p>
+				<p>fwj,chw,bw</p>
+			</div>
+			</div>
+			<div class="col-md-4">
+			<div class="contact-us">
+				<hr class="hyperlink">
+				<h5>5684684664</h5>
+				<hr class="hyperlink">
+				<p>dfaffhf@ffg.com</p>
+				<p>100,dgdu,fweiwei</p>
+				<p>fwj,chw,bw</p>
+			</div>
+			</div>
+			<div class="col-md-4">
+				<div class="contact-us">
+				<hr class="hyperlink">
+				<h5>5684684664</h5>
+				<hr class="hyperlink">
+				<p>dfaffhf@ffg.com</p>
+				<p>100,dgdu,fweiwei</p>
+				<p>fwj,chw,bw</p>
+			</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
